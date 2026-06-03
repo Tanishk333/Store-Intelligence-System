@@ -1,0 +1,7 @@
+[run]
+omit =
+    pipeline/runner.py
+    pipeline/staff/*
+
+[report]
+show_missing = True

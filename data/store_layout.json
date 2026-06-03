@@ -1,0 +1,34 @@
+{
+  "store_id": "ST1008",
+  "camera_defaults": {
+    "entry_line": [[80, 620], [1180, 620]],
+    "exit_line": [[80, 680], [1180, 680]]
+  },
+  "queue_threshold": 3,
+  "zones": [
+    {
+      "zone_id": "entrance",
+      "name": "Entrance",
+      "type": "entry",
+      "polygon": [[40, 520], [1240, 520], [1240, 720], [40, 720]]
+    },
+    {
+      "zone_id": "aisle_skin",
+      "name": "Skin Care Aisle",
+      "type": "shopping",
+      "polygon": [[80, 160], [520, 160], [520, 500], [80, 500]]
+    },
+    {
+      "zone_id": "aisle_makeup",
+      "name": "Makeup Aisle",
+      "type": "shopping",
+      "polygon": [[560, 160], [1040, 160], [1040, 500], [560, 500]]
+    },
+    {
+      "zone_id": "billing",
+      "name": "Billing Counter",
+      "type": "billing",
+      "polygon": [[900, 500], [1240, 500], [1240, 720], [900, 720]]
+    }
+  ]
+}

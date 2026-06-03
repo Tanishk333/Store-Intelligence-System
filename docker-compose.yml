@@ -1,0 +1,24 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: sqlite:///data/store_intelligence.db
+      POS_CSV_PATH: Brigade_Bangalore_10_April_26 (1)bc6219c.csv
+      CORS_ORIGINS: http://localhost:5173
+    volumes:
+      - ./data:/app/data
+      - ./CCTV Footage:/app/CCTV Footage:ro
+      - ./Brigade_Bangalore_10_April_26 (1)bc6219c.csv:/app/Brigade_Bangalore_10_April_26 (1)bc6219c.csv:ro
+  dashboard:
+    build:
+      context: .
+      dockerfile: dashboard/Dockerfile
+    ports:
+      - "5173:5173"
+    environment:
+      VITE_API_URL: http://localhost:8000
+      VITE_STORE_ID: ST1008
+    depends_on:
+      - api

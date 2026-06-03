@@ -1,0 +1,2 @@
+{"event_id":"sample-entry-1","store_id":"ST1008","camera_id":"CAM_1","visitor_id":"visitor_1","event_type":"ENTRY","timestamp":"2026-04-10T16:50:00+05:30","zone_id":null,"dwell_ms":null,"is_staff":false,"confidence":0.94,"metadata":{"source":"sample"}}
+{"event_id":"sample-zone-1","store_id":"ST1008","camera_id":"CAM_1","visitor_id":"visitor_1","event_type":"ZONE_ENTER","timestamp":"2026-04-10T16:51:00+05:30","zone_id":"billing","dwell_ms":null,"is_staff":false,"confidence":0.91,"metadata":{"source":"sample"}}
