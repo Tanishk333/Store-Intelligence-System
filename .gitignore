@@ -70,9 +70,6 @@ CCTV Footage/*.mp4
 CCTV Footage/*.avi
 CCTV Footage/*.mov
 
-# Events data
-data/events.jsonl
-
 # OS
 .DS_Store
 .AppleDouble
